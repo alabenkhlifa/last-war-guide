@@ -2619,9 +2619,10 @@ input, select, textarea {
 		}
 
 		.image.fit {
-			display: block;
+			display: flex;
 			margin: 2.5rem 0;
 			width: 100%;
+			height: 363px;
 		}
 
 			.image.fit:first-child {
@@ -4391,11 +4392,11 @@ input, select, textarea {
 	}
 
 	#copyright a {
-		color: cornflowerblue;
+		color: blue;
 	}
 
 	#copyright author {
-		color: aqua;
+		color: purple;
 	}
 
 /* Nav Panel */
@@ -4601,4 +4602,12 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+	.xp-needed {
+		color: red;
+	}
+
+	.xp-vs-points {
+		color: green;
 	}
