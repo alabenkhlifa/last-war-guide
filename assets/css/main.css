@@ -4396,7 +4396,8 @@ input, select, textarea {
 	}
 
 	#copyright author {
-		color: purple;
+		color: red;
+		font-weight: bold;
 	}
 
 /* Nav Panel */
