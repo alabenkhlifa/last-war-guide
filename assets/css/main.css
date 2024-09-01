@@ -4626,13 +4626,13 @@ input, select, textarea {
 
 	.transparent-input {
 		position: absolute;
-		bottom: 10px;
-		left: 50%;
+		bottom: 5px;
+		left: 70%;
 		transform: translateX(-50%);
 		width: 50%;
-		/*background: transparent;*/
+		background: transparent;
 		border: none;
-		color: black;
+		color: white;
 		text-align: center;
 		font-weight: bold;
 		font-family: 'Arial', sans-serif;
