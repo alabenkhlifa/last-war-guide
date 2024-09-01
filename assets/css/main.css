@@ -4642,3 +4642,13 @@ input, select, textarea {
 	.transparent-input:focus {
 		outline: none;
 	}
+
+	.blockquote-do {
+		border-left: 5px solid lightgreen;
+		background: rgba(0, 128, 0, 0.1);
+	}
+
+	.blockquote-dont {
+		border-left: 5px solid indianred;
+		background: rgba(178, 34, 34, 0.1);
+	}
