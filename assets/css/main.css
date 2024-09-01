@@ -4612,3 +4612,33 @@ input, select, textarea {
 	.xp-vs-points {
 		color: green;
 	}
+
+	.image-container {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.img-fluid {
+		width: 100%;
+		height: auto;
+	}
+
+	.transparent-input {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 50%;
+		/*background: transparent;*/
+		border: none;
+		color: black;
+		text-align: center;
+		font-weight: bold;
+		font-family: 'Arial', sans-serif;
+		font-size: 1rem;
+	}
+
+	.transparent-input:focus {
+		outline: none;
+	}
