@@ -17,7 +17,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    function validateDependentTech() {
+        const damageReductionLevel = parseInt($('#damage-reduction-sf-tech').val());
+
+        const healthLevel = parseInt($("#health-sf-tech").val());
+        const attackLevel = parseInt($("#attack-sf-tech").val());
+        const defenseLevel = parseInt($("#defense-sf-tech").val());
+
+        // Ensure health, attack, and defense are not higher than damage-reduction
+        if (healthLevel > damageReductionLevel) {
+            $('#health-sf-tech').val(damageReductionLevel);
+        }
+        if (attackLevel > damageReductionLevel) {
+            $('#attack-sf-tech').val(damageReductionLevel);
+        }
+        if (defenseLevel > damageReductionLevel) {
+            $('#defense-sf-tech').val(damageReductionLevel);
+        }
+    }
+
     function calculateNeededRss() {
+
+        validateDependentTech();
+
         // Separate resources needed for Damage Reduction research
         const goldDRNeeded = new Map([
             [1, 64_600_000], [2, 92_300_000], [3, 92_300_000], [4, 158_000_000], [5, 158_000_000],
