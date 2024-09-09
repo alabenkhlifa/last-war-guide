@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    calculateNeededRss();
 
     // Format number with dots every 3 digits
     function addADotEveryThreeDigits(number) {
@@ -110,16 +111,16 @@ document.addEventListener('DOMContentLoaded', function () {
         totalValorBadges = valorDR + valorHealth + valorAttack + valorDefense;
 
         // Format the numbers with dots and a more readable format (M, G)
-        const goldText = addADotEveryThreeDigits(totalGold) + " (" + formatLargeNumbers(totalGold) + ")";
-        const ironText = addADotEveryThreeDigits(totalIron) + " (" + formatLargeNumbers(totalIron) + ")";
-        const foodText = addADotEveryThreeDigits(totalFood) + " (" + formatLargeNumbers(totalFood) + ")";
-        const valorBadgesText = addADotEveryThreeDigits(totalValorBadges) + " (" + formatLargeNumbers(totalValorBadges) + ")";
+        const goldText = formatLargeNumbers(totalGold) + " (" + addADotEveryThreeDigits(totalGold) + ")";
+        const ironText = formatLargeNumbers(totalIron) + " (" + addADotEveryThreeDigits(totalIron) + ")";
+        const foodText = formatLargeNumbers(totalFood) + " (" + addADotEveryThreeDigits(totalFood) + ")";
+        const valorBadgesText = formatLargeNumbers(totalValorBadges) + " (" + addADotEveryThreeDigits(totalValorBadges) + ")";
 
         // Display the results
-        $('#sf-gold-needed').text("Gold Needed: " + goldText);
-        $('#sf-iron-needed').text("Iron Needed: " + ironText);
-        $('#sf-food-needed').text("Food Needed: " + foodText);
-        $('#sf-valor-badges-needed').text("Valor Badges Needed: " + valorBadgesText);
+        $('#sf-gold-needed').text("Total Gold Needed: " + goldText);
+        $('#sf-iron-needed').text("Total Iron Needed: " + ironText);
+        $('#sf-food-needed').text("Total Food Needed: " + foodText);
+        $('#sf-valor-badges-needed').text("Total Valor Badges Needed: " + valorBadgesText);
     }
 
     // Add event listeners for changes
