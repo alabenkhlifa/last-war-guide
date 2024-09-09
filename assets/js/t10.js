@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Ensure health, attack, and defense are not higher than damage-reduction
         if (healthLevel > damageReductionLevel) {
-            $('#health-sf-tech').val(damageReductionLevel);
+            $("#health-sf-tech").val(damageReductionLevel);
         }
         if (attackLevel > damageReductionLevel) {
-            $('#attack-sf-tech').val(damageReductionLevel);
+            $("#attack-sf-tech").val(damageReductionLevel);
         }
         if (defenseLevel > damageReductionLevel) {
-            $('#defense-sf-tech').val(damageReductionLevel);
+            $("#defense-sf-tech").val(damageReductionLevel);
         }
     }
 
