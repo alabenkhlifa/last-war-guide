@@ -14,6 +14,7 @@
     <meta name="description" content="Last War: Survivors Mobile Speedup Calculator">
     <meta name="og:title" property="og:title" content="Last War General Guides, Free-To-Play Guides and Calculators">
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="icon" href="https://favicon.twenty.com/github.com" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
@@ -47,7 +48,6 @@
     <!-- Main -->
     <div id="main">
 
-        <!-- Posts -->
         <section class="post">
             <header class="major">
                 <h1>Hero Experience</h1>
@@ -459,6 +459,147 @@
 
         </section>
 
+        <section class="post">
+            <header class="major">
+                <h1>T10 Calculator</h1>
+            </header>
+
+            <blockquote class="blockquote-dont">
+                Please note that the research <strong>Unit X is excluded from the calculator</strong>.
+            </blockquote>
+
+            <blockquote class="blockquote-do">
+                <strong>Unit X requires 193.2M Iron, 193.2M Food, 579.8M Gold and 2 398 Valor badges</strong>
+                (original values without applying any resource reduction)
+            </blockquote>
+
+            <div class="box blue-box">
+                <p>
+                    The alliance research "Senior Scientist" reduces the resource needed for research
+                    <br>
+                    <strong>
+                        All the values are calculated with the "Senior Scientist" research level 6 (-3% resources cost).
+                    </strong>
+                </p>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="col-12 align-center">
+                    <h3>Advanced Protection</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 align-center">
+                    <img src="images/icons/Reduce Damage SF Tech Icon.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 off-4">
+                    <select id="damage-reduction-sf-tech">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="col-4 align-center">
+                    <h3>HP Boost III</h3>
+                </div>
+                <div class="col-4 align-center">
+                    <h3>ATTACK BOOST III</h3>
+                </div>
+                <div class="col-4 align-center">
+                    <h3>DEFENSE BOOST III</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 align-center">
+                    <img src="images/icons/SF%20Health%20Icon.png" class="fit"/>
+                </div>
+                <div class="col-4 align-center">
+                    <img src="images/icons/SF%20Attack%20Icon.png" class="fit"/>
+                </div>
+                <div class="col-4 align-center">
+                    <img src="images/icons/SF%20Defence%20Icon.png" class="fit"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <select id="health-sf-tech">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="col-4">
+                    <select id="attack-sf-tech">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="col-4">
+                    <select id="defense-sf-tech">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-12 align-center">
+                    <h4 id="sf-gold-needed" class="darkorange-text"></h4>
+                    <h4 id="sf-iron-needed" class="darkgrey-text"></h4>
+                    <h4 id="sf-food-needed" class="brown-text"></h4>
+                    <h4 id="sf-valor-badges-needed" class="orangered-text"></h4>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <!-- Copyright -->
@@ -487,6 +628,7 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/hero-xp.js"></script>
 <script src="assets/js/speedup.js"></script>
+<script src="assets/js/t10.js"></script>
 
 </body>
 
